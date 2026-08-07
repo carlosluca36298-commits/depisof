@@ -1,0 +1,255 @@
+.laser {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #fff0f7 0%, #fce7f3 40%, #fff0f7 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.laser__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.laser__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.4;
+}
+
+.laser__orb--1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.25) 0%, transparent 70%);
+  top: -100px;
+  right: -100px;
+}
+
+.laser__orb--2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(190, 24, 93, 0.2) 0%, transparent 70%);
+  bottom: -100px;
+  left: -100px;
+}
+
+/* ---- Header ---- */
+.laser__header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.laser__title {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.laser__title-accent {
+  background: var(--gradient-pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+}
+
+.laser__subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.laser__subtitle strong {
+  color: var(--pink-700);
+  font-weight: 600;
+}
+
+/* ---- Sections ---- */
+.laser__section {
+  margin-bottom: 56px;
+  position: relative;
+  z-index: 1;
+}
+
+.laser__section--masc {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.04), rgba(44, 62, 80, 0.07));
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  border: 1px solid rgba(44, 62, 80, 0.1);
+}
+
+.laser__section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+}
+
+.laser__section-header--fem {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.08), rgba(244, 114, 182, 0.05));
+  border: 1px solid rgba(236, 72, 153, 0.15);
+}
+
+.laser__section-header--masc {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.08), rgba(51, 65, 85, 0.05));
+  border: 1px solid rgba(30, 41, 59, 0.15);
+}
+
+.laser__section-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--gradient-pink);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(236, 72, 153, 0.35);
+}
+
+.laser__section-icon--masc {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  box-shadow: 0 4px 15px rgba(30, 41, 59, 0.35);
+}
+
+.laser__section-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.laser__section-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+/* ---- Grid de servicios ---- */
+.laser__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.laser__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+  border: 1px solid transparent;
+  cursor: default;
+}
+
+.laser__card--fem {
+  background: var(--white);
+  border-color: rgba(244, 114, 182, 0.15);
+  box-shadow: var(--shadow-sm);
+}
+
+.laser__card--fem:hover {
+  border-color: var(--pink-400);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.laser__card--masc {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(51, 65, 85, 0.12);
+  box-shadow: 0 2px 8px rgba(30, 41, 59, 0.06);
+}
+
+.laser__card--masc:hover {
+  border-color: rgba(51, 65, 85, 0.35);
+  box-shadow: 0 4px 20px rgba(30, 41, 59, 0.12);
+  transform: translateY(-3px);
+}
+
+.laser__card-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.laser__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.laser__card-name {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.laser__card-desc {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+/* ---- CTA ---- */
+.laser__cta {
+  text-align: center;
+  padding: 48px;
+  background: linear-gradient(135deg, #fff0f7, #fce7f3);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--pink-200);
+  position: relative;
+  z-index: 1;
+}
+
+.laser__cta-text {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.laser__cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: var(--white);
+  border-radius: var(--radius-full);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  transition: var(--transition);
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+}
+
+.laser__cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 35px rgba(37, 211, 102, 0.5);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .laser__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .laser__section--masc {
+    padding: 24px 16px;
+  }
+
+  .laser__cta {
+    padding: 32px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .laser__grid {
+    grid-template-columns: 1fr;
+  }
+}

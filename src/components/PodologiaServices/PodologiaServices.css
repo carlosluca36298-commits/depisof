@@ -1,0 +1,164 @@
+.podologia {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #fffdfd 0%, #fff4f9 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.podologia::before {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  top: -180px;
+  left: -180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(236,72,153,.15), transparent 70%);
+  filter: blur(90px);
+}
+
+.podologia::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  bottom: -120px;
+  right: -120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212,168,83,.12), transparent 70%);
+  filter: blur(90px);
+}
+
+.podologia__header{
+  text-align:center;
+  margin-bottom:60px;
+  position:relative;
+  z-index:2;
+}
+
+.podologia__accent{
+  display:block;
+  background:var(--gradient-gold);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+
+.podologia__subtitle{
+  max-width:700px;
+  margin:auto;
+}
+
+.podologia__grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+  position:relative;
+  z-index:2;
+}
+
+.podologia__card{
+  background:white;
+  border-radius:var(--radius-lg);
+  padding:30px;
+  text-align:center;
+  border:1px solid var(--pink-200);
+  box-shadow:var(--shadow-sm);
+  transition:var(--transition);
+}
+
+.podologia__card:hover{
+  transform:translateY(-8px);
+  box-shadow:var(--shadow-lg);
+  border-color:var(--gold-400);
+}
+
+.podologia__icon{
+  width:72px;
+  height:72px;
+  margin:0 auto 20px;
+  border-radius:50%;
+  background:var(--gradient-gold);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:2rem;
+  color:white;
+  box-shadow:0 10px 25px rgba(212,168,83,.35);
+}
+
+.podologia__title{
+  font-family:var(--font-heading);
+  font-size:1.35rem;
+  color:var(--text-primary);
+  margin-bottom:12px;
+}
+
+.podologia__text{
+  color:var(--text-secondary);
+  line-height:1.7;
+  font-size:.95rem;
+}
+
+.podologia__cta{
+  margin-top:70px;
+  padding:45px;
+  border-radius:var(--radius-xl);
+  background:linear-gradient(135deg,#fff0f7,#fef7e7);
+  border:1px solid var(--gold-400);
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+
+.podologia__cta h3{
+  font-family:var(--font-heading);
+  font-size:2rem;
+  margin-bottom:12px;
+  color:var(--text-primary);
+}
+
+.podologia__cta p{
+  max-width:650px;
+  margin:0 auto 25px;
+  color:var(--text-secondary);
+}
+
+.podologia__btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 34px;
+  border-radius:999px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  background:linear-gradient(135deg,#25D366,#128C7E);
+  transition:var(--transition);
+  box-shadow:0 10px 25px rgba(37,211,102,.35);
+}
+
+.podologia__btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 35px rgba(37,211,102,.45);
+}
+
+@media(max-width:768px){
+
+  .podologia{
+    padding:80px 0;
+  }
+
+  .podologia__grid{
+    grid-template-columns:1fr;
+  }
+
+  .podologia__cta{
+    padding:30px 20px;
+  }
+
+  .podologia__cta h3{
+    font-size:1.7rem;
+  }
+
+}

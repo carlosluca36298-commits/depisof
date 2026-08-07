@@ -1,0 +1,238 @@
+.about {
+  padding: 100px 0;
+  background: var(--gradient-section);
+  position: relative;
+  overflow: hidden;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--pink-300), transparent);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ---- Content ---- */
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__title {
+  margin-bottom: 4px;
+}
+
+.about__text {
+  color: var(--text-secondary);
+}
+
+.about__text strong {
+  color: var(--pink-700);
+  font-weight: 600;
+}
+
+/* ---- Values ---- */
+.about__values {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.about__value {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--pink-200);
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.about__value:hover {
+  border-color: var(--pink-400);
+  box-shadow: var(--shadow-md);
+  transform: translateX(6px);
+}
+
+.about__value-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.about__value-title {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.about__value-desc {
+  font-size: 0.84rem;
+  color: var(--text-light);
+}
+
+/* ---- Professionals ---- */
+.about__professionals {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__pro-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.about__pro-card--soledad {
+  background: linear-gradient(145deg, #fff0f7, #fce7f3);
+  border-color: var(--pink-200);
+  box-shadow: var(--shadow-md);
+}
+
+.about__pro-card--alejandra {
+  background: linear-gradient(145deg, #fdf9f0, #fef3e2);
+  border-color: rgba(212, 168, 83, 0.3);
+  box-shadow: 0 4px 20px rgba(212, 168, 83, 0.15);
+}
+
+.about__pro-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.about__pro-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.about__pro-card--soledad .about__pro-avatar {
+  background: var(--gradient-pink);
+  box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+}
+
+.about__pro-card--alejandra .about__pro-avatar {
+  background: var(--gradient-gold);
+  box-shadow: 0 4px 15px rgba(212, 168, 83, 0.4);
+}
+
+.about__pro-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.about__pro-role {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--pink-600);
+}
+
+.about__pro-card--alejandra .about__pro-role {
+  color: var(--gold-500);
+}
+
+.about__pro-name {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.about__pro-spec {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.about__pro-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 18px;
+  background: var(--gradient-pink);
+  color: var(--white);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  transition: var(--transition);
+  width: fit-content;
+}
+
+.about__pro-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
+}
+
+.about__pro-btn--gold {
+  background: var(--gradient-gold);
+  color: var(--dark-800);
+}
+
+.about__pro-btn--gold:hover {
+  box-shadow: 0 6px 20px rgba(212, 168, 83, 0.4);
+}
+
+/* ---- Badge flotante ---- */
+.about__badge-float {
+  position: absolute;
+  top: -16px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: linear-gradient(135deg, #0d0008, #3d0030);
+  color: var(--white);
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid rgba(244, 114, 182, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about__badge-float {
+    position: static;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
