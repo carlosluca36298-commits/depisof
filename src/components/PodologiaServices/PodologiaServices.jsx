@@ -46,6 +46,10 @@ export default function PodologiaServices() {
 
         <div className="podologia__header">
           <span className="badge">Podología Clínica</span>
+          <div>
+          <h1 class="texto-flameante">MATRICULADA</h1>
+
+          </div>
 
           <h2 className="section-title">
             Salud y bienestar

@@ -110,6 +110,29 @@
   position:relative;
   z-index:2;
 }
+.texto-flameante {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: 'Arial Black', sans-serif;
+  display: inline-block;
+  
+  /* Efecto Dorado Estático */
+  background: linear-gradient(
+    45deg, 
+    #9a7432 0%, 
+    #cba358 25%, 
+    #f7e5a9 50%, 
+    #cba358 75%, 
+    #9a7432 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Sombra para dar relieve */
+  filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.4));
+}
+
 
 .podologia__cta h3{
   font-family:var(--font-heading);
