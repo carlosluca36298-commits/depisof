@@ -20,7 +20,7 @@ export default function Hero() {
           {/* Badge */}
           <div className="hero__badge">
             <span className="hero__badge-dot"></span>
-            Alma Laser · Máquina Profesional Original
+            Soprano ICE-Alma Laser · Máquina Profesional Original
           </div>
 
           {/* Título */}
@@ -100,7 +100,7 @@ export default function Hero() {
               <div className="hero__card-features">
                 <div className="hero__feature">
                   <span className="hero__feature-icon">🌟</span>
-                  <span>Tecnología Alma Laser</span>
+                  <span>Tecnología Soprano ICE-Alma Laser</span>
                 </div>
                 <div className="hero__feature">
                   <span className="hero__feature-icon">💎</span>
@@ -110,21 +110,18 @@ export default function Hero() {
                   <span className="hero__feature-icon">🛡️</span>
                   <span>Tratamiento seguro</span>
                 </div>
-                <div className="hero__feature">
-                  <span className="hero__feature-icon">👥</span>
-                  <span>Para todos los fototodos</span>
-                </div>
-              </div>
-            </div>
-          </div>
+                 </div>
+                 </div>
+                  </div>
+              
+            
+          
 
           {/* Floating badges */}
           <div className="hero__float hero__float--top">
             <span>⭐</span> Profesionales certificadas
           </div>
-          <div className="hero__float hero__float--bottom">
-            <span>🦷</span> Dolor mínimo garantizado
-          </div>
+        
         </div>
       </div>
 

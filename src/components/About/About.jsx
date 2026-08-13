@@ -17,7 +17,7 @@ export default function About() {
               para que cada visita sea una experiencia única.
             </p>
             <p className="section-subtitle about__text">
-              Trabajamos con la <strong>máquina Alma Laser original</strong>, garantizando
+              Trabajamos con la <strong>máquina Soprano ICE- Alma Laser original</strong>, garantizando
               los más altos estándares de seguridad y eficacia en cada sesión de depilación láser.
               Nuestro servicio de podología clínica está orientado a la salud y estética del pie
               con atención especializada.
@@ -35,7 +35,7 @@ export default function About() {
                 <div className="about__value-icon">🔬</div>
                 <div>
                   <h4 className="about__value-title">Tecnología certificada</h4>
-                  <p className="about__value-desc">Alma Laser, referente mundial en depilación láser</p>
+                  <p className="about__value-desc">Soprano ICE-Alma Laser Original, referente mundial en depilación láser</p>
                 </div>
               </div>
               <div className="about__value">

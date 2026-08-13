@@ -3,7 +3,7 @@ import "./Technology.css";
 const technologies = [
   {
     icon: "✨",
-    title: "Alma Laser Original",
+    title: "Soprano ICE-Alma Laser Original",
     description:
       "Tecnología líder a nivel mundial para depilación definitiva con resultados visibles desde las primeras sesiones.",
   },
@@ -37,7 +37,7 @@ export default function Technology() {
 
           <h2 className="section-title">
             Trabajamos con
-            <span className="technology__accent"> Alma Laser</span>
+            <span className="technology__accent">Soprano ICE-Alma Laser</span>
           </h2>
 
           <p className="section-subtitle technology__subtitle">
